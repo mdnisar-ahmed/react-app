@@ -14,7 +14,7 @@ const Alert = ({ children,onClose }: Props) => {
         className="btn-close"
         data-bs-dismiss="alert"
         aria-label="Close"
-        onClick={onClose}
+        onClick={onClose} 
       ></button>
     </div>
   );

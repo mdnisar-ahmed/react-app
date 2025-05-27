@@ -6,6 +6,8 @@ import ListGroup from "./Components/ListGroup";
 import Card from "./Components/Card";
 import UserGreeting from "./Components/UserGreeting";
 import List from "./Components/List";
+import Counter from "./Components/Counter"
+import MyComponent from "./Components/MyComponent"
 
 function App() {
   const listItems = ["California", "Texas", "Kansas", "Missouri", "Nebraska"];
@@ -24,6 +26,7 @@ function App() {
 
   return (
     <>
+    <Counter />
       <ListGroup
         listItems={listItems}
         heading="Cities"
@@ -38,6 +41,7 @@ function App() {
       <Card></Card>
       <UserGreeting isLoggedIn={true} username="Nisar" />
       <List items={fruits} Category="Fruits" />
+      <MyComponent />
     </>
   );
 }

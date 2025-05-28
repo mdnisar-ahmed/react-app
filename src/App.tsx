@@ -8,6 +8,8 @@ import UserGreeting from "./Components/UserGreeting";
 import List from "./Components/List";
 import Counter from "./Components/Counter"
 import MyComponent from "./Components/MyComponent"
+import ColorPicker from "./Components/ColorPicker"
+
 
 function App() {
   const listItems = ["California", "Texas", "Kansas", "Missouri", "Nebraska"];
@@ -42,6 +44,7 @@ function App() {
       <UserGreeting isLoggedIn={true} username="Nisar" />
       <List items={fruits} Category="Fruits" />
       <MyComponent />
+      <ColorPicker />
     </>
   );
 }

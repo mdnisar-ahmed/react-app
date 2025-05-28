@@ -7,6 +7,7 @@ function Counter() {
   
 const decrement=()=>{
     setCount(count-1);   
+    setCount(c=>c-1); // Updater Function 
 }
 
 const increment=()=>{

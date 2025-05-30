@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { Routes, Route } from 'react-router-dom';
 import Alert from "./Components/Alert";
 import Button from "./Components/Button";
 import ListGroup from "./Components/ListGroup";
@@ -44,13 +45,17 @@ function App() {
       <Button onClick={() => setAlertVisibility(true)} color="warning">
         MyButton
       </Button>
-      <Card></Card>
       <UserGreeting isLoggedIn={true} username="Nisar" />
       <List items={fruits} Category="Fruits" />
-      <MyComponent />
-      <ColorPicker />
-      <DigitalClock />
-      <ComponentA />
+      <Routes>
+        <Route path="/card" element={<Card />} />
+        <Route path="/color-picker" element={<ColorPicker />} />
+        <Route path="/digital-clock" element={<DigitalClock />} />
+        <Route path="/componentA" element={<ComponentA />} />
+        <Route path="/my-component" element={<MyComponent />} />
+    
+      </Routes>
+      
     </>
   );
 }

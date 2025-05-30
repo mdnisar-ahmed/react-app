@@ -224,8 +224,10 @@ body{
 .box{
   border: 5px solid black;
   padding : 25px;
-  font-family: monospace;
   font-weight: bold;
-  color:black;
+}
 
+.box-p{
+  color:yellow;
+  font-size: 2rem;
 }

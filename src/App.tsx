@@ -9,6 +9,10 @@ import List from "./Components/List";
 import Counter from "./Components/Counter"
 import MyComponent from "./Components/MyComponent"
 import ColorPicker from "./Components/ColorPicker"
+import DigitalClock from "./Components/DigitalClock"
+import ComponentA from "./Components/UseContext/ComponentA";
+
+
 
 
 function App() {
@@ -45,6 +49,8 @@ function App() {
       <List items={fruits} Category="Fruits" />
       <MyComponent />
       <ColorPicker />
+      <DigitalClock />
+      <ComponentA />
     </>
   );
 }
